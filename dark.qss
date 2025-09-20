@@ -1,0 +1,821 @@
+/*����� �������� ����*/
+QMainWindow {
+    background-color: #2c2f33;
+    border-color: #2c2f33;
+}
+
+QGraphicsView {
+    background-color: #2c2f33;
+}
+    QPushButton#stable {
+        background-color: black; /* ���������� */
+    }
+
+    QPushButton[objectName="b-"] {
+        background-color: cyan; /* ���������� */
+    }
+
+    QPushButton[objectName="b+"] {
+        background-color: green; /* ���������� */
+    }
+
+    QPushButton[objectName="EC"] {
+        background-color: lightgreen; /* ���������� */
+    }
+    QPushButton[objectName="a"] {
+        background-color: yellowgreen; /* ���������� */
+    }
+
+    QPushButton[objectName="SF"] {
+        background-color: palevioletred; /* ���������� */
+    }
+
+    QPushButton[objectName="p"] {
+        background-color: #cc9966; /* ���������� */
+    }
+
+    QPushButton[objectName="n"] {
+        background-color: darkviolet; /* ���������� */
+    }
+
+    QPushButton[objectName="2b-"] {
+        background-color: cyan; /* ���������� */
+    }
+
+    QPushButton[objectName="2b+"] {
+        background-color: green; /* ���������� */}
+
+
+/*����� ������������ ��������� - ������������ ����� ��������*/
+QGroupBox#The_center_widget {
+    border-style: outset;
+    border-width: 0px;
+    margin: 1px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}   /*����� ����� ������������ ���������*/
+    QGroupBox#The_center_widget::title {
+        background-color: transparent;
+        border-width: 0px;
+        padding: 0px;
+        border: none;
+        /*���� �������*/
+        color: transparent;
+    }
+
+
+/*����� ��������� ��� left ��������*/
+QGroupBox#MainWidget {
+    border-style: outset;
+    border-width: 0px;
+    margin: 1px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+    /*����� ����� ������������ ���������*/
+    QGroupBox#MainWidget::title {
+        background-color: transparent;
+        border-width: 0px;
+        padding: 0px;
+        border: none;
+        /*���� �������*/
+        color: transparent;
+    }
+
+
+/*����� Menu-����*/
+QMenuBar {
+    /*�����-����� ��� ����*/
+    background-color: #212121;
+    /*����� ����� ����*/
+    color: #FFFFFF;
+    /*������� ����*/
+    border: 1px solid #444444;
+    /*���������� ����� ����������*/
+    /* spacing: 10px; */
+}
+    /*����� ��������� ����-����*/
+    QMenuBar::item {
+        /*���������� ��� ��� ��������� ����*/
+        background-color: transparent;
+        /*����� ����� ��������� ����*/
+        color: #FFFFFF;
+        /*��������� �������*/
+        padding: 0 15px;
+        /*���������� ����� ��������*/
+        margin: 0 5px;
+    }
+        /*����� ��������� ���� ���� ��� ���������*/
+        QMenuBar::item:selected {
+            background-color: rgba(255,255,20,50); 
+        }
+
+/*����� Menu*/
+QMenu {
+    /*�����-����� ��� ����������� ����*/
+    background-color: #333333;
+    /*����� ����� ����������� ����*/
+    color: #FFFFFF;
+    /*������� ����������� ����*/
+    border: 1px solid #555555;
+}
+    /*����� ��������� Menu ��� ���������*/
+    QMenu::item:selected {
+        /* ������-����� ��� ��� ��������� */
+        background-color: rgba(255,255,20,50);
+        /* ����� ����� ��� ��������� */
+        color: #FFFFFF;
+    }
+
+
+/*����� menu line*/
+QFrame#menuline {
+    color: orange;
+    background-color: orange;
+    height: 4px;
+}
+QComboBox {
+    border: 1px black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+/*����� ����� ����� ���������*/
+QSplitter#mainhorsplitter::handle {
+    background-color: orange; /*#212121; /*#283d3d; /*orange;*/
+}
+QSplitter#mainhorsplitter::handle:pressed {
+    background-color: orangered;
+}
+
+
+/*����� GUI ���������*/
+QWidget#GUITerminal {
+    border: none;
+    border-width: 0px;
+    padding: 0px;
+    margin: 0;
+}
+/*����� ����� GUI ���������*/
+QLabel#terminal_label {
+    color: forestgreen;/*#283d3d; /*white;*/
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0;
+}
+/*����� ������ �������� GUI ���������*/
+QPushButton#close_terminal_button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+    /*����� ������ �������� GUI ��������� ��� �������*/
+    QPushButton#close_terminal_button:hover {
+        background-color: rgba(255, 255, 20, 50);
+        padding: 0;
+        margin: 0;
+    }
+QTextEdit#terminal_text_editor {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #212121;
+    border: none;
+    padding: 15px;
+}
+
+
+
+/*����� ���-���� ��� ����� ������ ������������ ����� ����������*/
+    QToolBar {
+    background-color: #212121;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top: 2px solid;
+    border-top-color: orange;
+}
+/*����� ������ ���-����*/
+QToolButton {
+    border: 2px;
+    background-color: #212121;
+    border-radius: 16px;
+    margin: 10px;
+    color: #283d3d;
+    margin-top: 15px;
+}
+    /*����� ������ ���-���� ��� ���������*/
+    QToolButton:hover {
+        background-color: rgba(255,255,20,50);
+        color: darkorange;
+    }
+        /*����� ������ ������ ���-���� ��� ���������*/
+        /* QToolButton:hover QIcon { */
+        /* } */
+    /*����� ������ ���-���� ��� �������*/
+    QToolButton:pressed {
+        padding: 4px;
+        color: green;
+    }
+
+
+/*����� ��� ������� ������� ���������� � �����*/
+QDockWidget{
+    /*font-family: "monospace";*/
+    font-family: Consolas;
+    font-size: 10pt;
+    color: #283d3d; 
+    border-width: 5px;
+    background-color: #212121;
+    border-color: #212121;
+    padding-left: 1px;
+    padding-top: 10px;
+    margin: 5px;
+}
+    /*����� ����� ��� ������� ������� ���������� � �����*/
+    QDockWidget:title {
+        background-color: #212121;
+        border-color: #212121;
+        border-radius: 1px;
+        margin-top: 8px;
+    }
+    /*����� ����������(���������� QGroupBox) � ���� ���-������� */
+    QGroupBox#dashborder {
+        border: 5px solid #212121; 
+        margin-top: 0px; 
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+
+
+
+
+/* ----------MODELS STYLESHEETS---------------*/
+
+
+/*Usage models styles:*/
+
+/*Styles of Left of Usage models*/
+QGroupBox#gbox_usage_left {
+    background-image: url('AFI.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 0px;
+    margin-top: 20px;
+}
+    QGroupBox#gbox_usage_left:title {
+        /* subcontrol-origin: margin;
+        subcontrol-position: top center; */
+        padding: 0 10px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 0px;
+        border: none;
+    }
+
+/*Styles of right of Usage models*/
+QLabel#usage_right_label {
+    /*  #283d3d ������� ��� */
+    background-color: #212121;
+    /* ����� ����� */
+    color: white;
+    /* ������������ ���� */
+    border-radius: 50px;
+    /* ���������� ������� */
+    padding: 15px;
+    /* ������ ������ */
+    font-size: auto;
+    
+}
+
+
+QCheckBox#usage_right_checkbox {
+    /* ������ ������ */
+    font-size: auto;
+    color: white;
+}
+
+/*��������� ������*/
+QPushButton#right_btn_accept {
+    /* �������� ��������� ������ */
+    background-color: gray;
+    color: white;
+    border-radius: 15px;
+    font-size: auto;
+    padding: 8px;
+}
+/* ������ � ��������� enabled (��������) */
+QPushButton#right_btn_accept:enabled {
+    background-color: #283d3d;
+    color: white;
+}
+/* ������ � ��������� disabled (����������) */
+QPushButton#right_btn_accept:disabled {
+    background-color: gray;
+    color: lightgray;
+}
+/* ������ � ��������� pressed (������) */
+QPushButton#right_btn_accept:pressed {
+    background-color: #bfd7ed;
+    color: white;
+    /* ������������ ���� */
+    border-radius: 15px;
+    /* ������ ������ */
+    font-size: auto;
+    padding: 8px;
+}
+/*****End of Usage model stylesheets.******/
+
+
+/*Styles of Mendeleev models*/
+
+/* ���������� ������� */
+QPushButton[objectName="alkali_metal"] {
+    background-color: #ff6666; /* ������� */
+}
+
+QPushButton[objectName="alkaline_earth_metal"] {
+    background-color: #ffcc66; /* ��������� */
+}
+
+QPushButton[objectName="transition_metal"] {
+    background-color: #9966cc; /* ���������� */
+}
+
+QPushButton[objectName="metalloid"] {
+    background-color: #669999; /* ����-������� */
+}
+
+QPushButton[objectName="nonmetal"] {
+    background-color: #3366cc; /* ����� */
+}
+
+QPushButton[objectName="halogen"] {
+    background-color: #ff9966; /* ���������� */
+}
+
+QPushButton[objectName="noble_gas"] {
+    background-color: #cc6699; /* ������� */
+}
+
+QPushButton[objectName="post_transition_metal"] {
+    background-color: #66cc99; /* ��������� */
+}
+
+QPushButton[objectName="lanthanide"] {
+    background-color: #0099cc; /* ������� */
+}
+
+QPushButton[objectName="actinide"] {
+    background-color: #cc9966; /* ���������� */
+}
+
+/* ����� ������ */
+QPushButton:hover {
+    border: 2px solid white;
+}
+
+QComboBox#select_cb {
+    background-color: #496365;
+    /* ����� ����� */
+    color: white;
+    /* ������������ ���� */
+    border-radius: 10px;
+    /* ���������� ������� */
+    padding: 5px;
+    /* ������ ������ */
+    font-size: auto;
+}
+
+QLabel#inf_label {
+    color: white; 
+    background-color: #16637f;
+    font-family: 'Italiana';
+    border-radius: 5px;
+}
+
+QLineEdit#inf_text {
+    color: white; 
+    background-color: #828385;
+    border-radius: 10px;
+}
+
+
+
+
+/*Styles of Left of Table of Nuclides models*/
+QPushButton#stable {
+    background-color: black; /* ���������� */
+}
+
+QPushButton[objectName="b-"] {
+    background-color: cyan; /* ���������� */
+}
+
+QPushButton[objectName="b+"] {
+    background-color: green; /* ���������� */
+}
+
+QPushButton[objectName="EC"] {
+    background-color: lightgreen; /* ���������� */
+}
+QPushButton[objectName="a"] {
+    background-color: yellowgreen; /* ���������� */
+}
+
+QPushButton[objectName="SF"] {
+    background-color: palevioletred; /* ���������� */
+}
+
+QPushButton[objectName="p"] {
+    background-color: #cc9966; /* ���������� */
+}
+
+QPushButton[objectName="n"] {
+    background-color: darkviolet; /* ���������� */
+}
+
+QPushButton[objectName="2b-"] {
+    background-color: cyan; /* ���������� */
+}
+
+QPushButton[objectName="2b+"] {
+    background-color: green; /* ���������� */
+}
+
+QLabel#set_label {
+    /*  #283d3d ������� ��� */
+    background-color: #212121;
+    /* ����� ����� */
+    color: white;
+    /* ������������ ���� */
+    border-radius: 5px;
+    /* ���������� ������� */
+    padding: 5px;
+    /* ������ ������ */
+    font-size: auto;
+    font-family: 'Italiana';
+}
+
+QComboBox#from_box {
+    background-color: #496365;
+    /* ����� ����� */
+    color: white;
+    /* ������������ ���� */
+    border-radius: 10px;
+    /* ���������� ������� */
+    padding: 5px;
+    /* ������ ������ */
+    font-size: auto;
+}
+
+QComboBox#to_box {
+    background-color: #496365;
+    /* ����� ����� */
+    color: white;
+    /* ������������ ���� */
+    border-radius: 10px;
+    /* ���������� ������� */
+    padding: 5px;
+    /* ������ ������ */
+    font-size: auto;
+}
+
+
+
+QLabel#react_types {
+    /*  #283d3d ������� ��� */
+    background-color: #16637f;
+    /* ����� ����� */
+    color: white;
+    /* ������������ ���� */
+    border-radius: 10px;
+    /* ���������� ������� */
+    padding: 5px;
+    /* ������ ������ */
+    font-size: auto;
+    font-family: 'Italiana';
+}
+
+
+QWidget#types_widget {
+    background-color: #3d3f43 ;
+}
+
+QPushButton#burnup_pb {
+    background-color: #254d23;
+    color: white;
+    border-radius: 10px; 
+}
+
+QTabWidget#flux_state {
+    background-color: #2c2f33;
+}
+
+QLabel#energy_label {
+    color: white;
+}
+
+QLabel#flux_label {
+    color: white;
+}
+
+QLabel#database_label {
+    color: white;
+}
+
+QComboBox#energy_box {
+    background-color: #496365;
+    /* ����� ����� */
+    color: white;
+    /* ������������ ���� */
+    border-radius: 10px;
+    /* ���������� ������� */
+    padding: 5px;
+    /* ������ ������ */
+    font-size: auto;
+}
+
+QComboBox#flux_box {
+    background-color: #496365;
+    /* ����� ����� */
+    color: white;
+    /* ������������ ���� */
+    border-radius: 10px;
+    /* ���������� ������� */
+    padding: 5px;
+    /* ������ ������ */
+    font-size: auto;
+}
+
+QComboBox#database_box {
+    background-color: #496365;
+    /* ����� ����� */
+    color: white;
+    /* ������������ ���� */
+    border-radius: 10px;
+    /* ���������� ������� */
+    padding: 5px;
+    /* ������ ������ */
+    font-size: auto;
+}
+
+QCheckBox#neutron_cb {
+    color: white;
+}
+
+QCheckBox#betaplus_cb {
+    color: white;
+}
+
+QCheckBox#betaminus_cb {
+    color: white;
+}
+
+QCheckBox#alpha_cb {
+    color: white;
+}
+
+QCheckBox#gamma_cb {
+    color: white;
+}
+
+QCheckBox#arrows_cb {
+    color: white;
+}
+
+
+/*model_results stule sheets*/
+
+QLabel#result_label {
+    color: white;
+}
+
+QTableView#result_table {
+    background-color: #828385;
+    border: 5px solid #212121; 
+    margin-top: 40px; 
+    margin-bottom: 40px;
+    margin-right: 300px;
+    margin-left: 40px;
+}
+
+QLabel#export_label {
+    color: white;
+}
+
+QPushButton#result_csv_pb {
+    color: white;
+    background-color: #496365;
+}
+
+QPushButton#result_txt_pb {
+    color: white;
+    background-color: #496365;
+}
+
+QLabel#init_cond_label{
+    color: white;
+}
+
+QTableView#init_cond_table {
+    background-color: #828385;
+    margin-top: 10px; 
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    
+}
+
+
+QLabel#method_label{
+    color: white;
+    font-size: medium;
+}
+
+QComboBox#method_box {
+    background-color: #496365;
+    /* ����� ����� */
+    color: white;
+    /* ������������ ���� */
+    border-radius: 10px;
+    /* ���������� ������� */
+    padding: 5px;
+    /* ������ ������ */
+    font-size: auto;
+}
+
+
+QLabel#time_label{
+    color: white;
+}
+
+QLineEdit#time_lineedit{
+    background-color: #496365;
+}
+
+QComboBox#time_unit_box {
+    background-color: #496365;
+    /* ����� ����� */
+    color: white;
+    /* ������������ ���� */
+    border-radius: 10px;
+    /* ���������� ������� */
+    padding: 5px;
+    /* ������ ������ */
+    font-size: auto;
+}
+
+QCheckBox#heat_density_cb {
+    color:white;
+    font-size: 14;
+}
+QCheckBox#product_cb {
+    color:white;
+    font-size: 14;
+}
+QCheckBox#concentration_cb {
+    color:white;
+    font-size: 14;
+}
+
+QPushButton#calculate_pb {
+    background-color: #254d23;
+    color: white;
+    border-radius: 10px; 
+}
+
+
+/*model_graph stylesheets*/
+
+QHBoxLayout#types_hlayout {
+    background-color: red;
+}
+
+QLabel#dpi_label{
+    color: white;
+    font-size: medium;
+}
+
+QLineEdit#dpi_lineedit {
+    color: white; 
+    background-color: #828385;
+    border-radius: 10px;
+}
+
+
+QLabel#param_label{
+    color: white;
+    font-size: medium;
+}
+
+QLineEdit#param_lineedit {
+    color: white; 
+    background-color: #828385;
+    border-radius: 10px;
+}
+
+
+QLabel#export_as_label{
+    color: white;
+    font-size: medium;
+}
+
+
+
+QPushButton#export_pdf_pb {
+    color: white;
+    background-color: #496365;
+}
+
+QPushButton#export_img_pb {
+    color: white;
+    background-color: #496365;
+}
+
+QLabel#graphtype_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#themes_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#legend_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#legend_pos_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#legend_size_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#grid_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#x_density_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#y_density_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#title_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#title_header_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#title_xaxis_label{
+    color: white;
+    font-size: medium;
+}
+
+
+QLabel#title_yaxis_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#normalization_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#normalization_xaxis_label{
+    color: white;
+    font-size: medium;
+}
+
+QLabel#normalization_yaxis_label{
+    color: white;
+    font-size: medium;
+}
+
+
+
+
+
+
+

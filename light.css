@@ -1,0 +1,291 @@
+/*Стиль главного окна*/
+QMainWindow {
+    background-color: white;
+    border-color: white;
+}
+
+/*Стиль центрального групбокса - разделенного через сплиттер*/
+QGroupBox#The_center_widget {
+    border-style: outset;
+    border-width: 0px;
+    margin: 1px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+    /*Стиль шапки центрального групбокса*/
+    QGroupBox#The_center_widget::title {
+        background-color: transparent;
+        border-width: 0px;
+        padding: 0px;
+        border: none;
+        color: transparent;
+    }
+
+/*Стиль групбокса для left виджетов*/
+QGroupBox#MainWidget {
+    border-style: outset;
+    border-width: 0px;
+    margin: 1px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+    /*Стиль шапки центрального групбокса*/
+    QGroupBox#MainWidget::title {
+        background-color: transparent;
+        border-width: 0px;
+        padding: 0px;
+        border: none;
+        color: transparent;
+    }
+
+/*Стиль Menu-бара*/
+QMenuBar {
+    background-color: #f0f0f0;
+    color: #000000;
+    border: 1px solid #d0d0d0;
+    spacing: 10px;
+}
+
+    QMenuBar::item {
+        background-color: transparent;
+        color: #000000;
+        padding: 0 15px;
+        margin: 0 5px;
+    }
+
+        QMenuBar::item:selected {
+            background-color: rgba(255, 180, 0, 50);
+        }
+
+/*Стиль Menu*/
+QMenu {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #d0d0d0;
+}
+
+    QMenu::item:selected {
+        background-color: rgba(255, 180, 0, 50);
+        color: black;
+    }
+
+/*Стиль menu line*/
+QFrame#menuline {
+    color: orange;
+    background-color: orange;
+    height: 4px;
+}
+
+/*Стиль сплиттера*/
+QSplitter#mainhorsplitter::handle {
+    background-color: orange;
+}
+
+    QSplitter#mainhorsplitter::handle:pressed {
+        background-color: orangered;
+    }
+
+/*Стиль GUI терминала*/
+QWidget#GUITerminal {
+    border: none;
+    border-width: 0px;
+    padding: 0px;
+    margin: 0;
+}
+
+QLabel#terminal_label {
+    color: cornflowerblue;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0;
+}
+
+QPushButton#close_terminal_button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+    QPushButton#close_terminal_button:hover {
+        background-color: rgba(0, 0, 0, 20);
+        padding: 0;
+        margin: 0;
+    }
+
+QTextEdit#terminal_text_editor {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 15px;
+}
+
+/*Стиль ТУЛ-БАРА*/
+QToolBar {
+    background-color: #f0f0f0;
+    border-top: 2px solid orange;
+}
+
+QToolButton {
+    border: 2px;
+    background-color: #f0f0f0;
+    border-radius: 16px;
+    margin: 10px;
+    color: black;
+    margin-top: 15px;
+}
+
+    QToolButton:hover {
+        background-color: rgba(255, 180, 0, 50);
+        color: darkorange;
+    }
+
+    QToolButton:pressed {
+        padding: 4px;
+        color: green;
+    }
+
+/*Стиль ДОК ВИДЖЕТА*/
+QDockWidget {
+    font-family: Consolas;
+    font-size: 10pt;
+    color: black;
+    border-width: 5px;
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+    padding-left: 1px;
+    padding-top: 10px;
+    margin: 5px;
+}
+
+    QDockWidget:title {
+        background-color: #f0f0f0;
+        border-color: #f0f0f0;
+        border-radius: 1px;
+        margin-top: 8px;
+    }
+
+QGroupBox#dashborder {
+    border: 5px solid #f0f0f0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+/* ----------MODELS STYLESHEETS--------------- */
+
+/*Usage models styles*/
+QGroupBox#gbox_usage_left {
+    background-image: url('AFI.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 0px;
+    margin-top: 20px;
+}
+
+    QGroupBox#gbox_usage_left:title {
+        subcontrol-origin: margin;
+        subcontrol-position: top center;
+        padding: 0 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 0px;
+        border: none;
+    }
+
+/* Right панель */
+QLabel#usage_right_label {
+    background-color: #f0f0f0;
+    color: black;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: auto;
+}
+
+QCheckBox#usage_right_checkbox {
+    font-size: auto;
+    color: black;
+}
+
+/* Кнопка "Browse" */
+QPushButton#right_btn_accept {
+    background-color: gray;
+    color: black;
+    border-radius: 15px;
+    font-size: auto;
+    padding: 8px;
+}
+
+    QPushButton#right_btn_accept:enabled {
+        background-color: #d0d0d0;
+        color: black;
+    }
+
+    QPushButton#right_btn_accept:disabled {
+        background-color: lightgray;
+        color: darkgray;
+    }
+
+    QPushButton#right_btn_accept:pressed {
+        background-color: #bfd7ed;
+        color: black;
+        border-radius: 15px;
+        font-size: auto;
+        padding: 8px;
+    }
+
+/* Цвета кнопок для таблицы Менделеева */
+QPushButton[objectName="alkali_metal"] {
+    background-color: #ff6666;
+}
+
+QPushButton[objectName="alkaline_earth_metal"] {
+    background-color: #ffcc66;
+}
+
+QPushButton[objectName="transition_metal"] {
+    background-color: #9966cc;
+}
+
+QPushButton[objectName="metalloid"] {
+    background-color: #669999;
+}
+
+QPushButton[objectName="nonmetal"] {
+    background-color: #3366cc;
+}
+
+QPushButton[objectName="halogen"] {
+    background-color: #ff9966;
+}
+
+QPushButton[objectName="noble_gas"] {
+    background-color: #cc6699;
+}
+
+QPushButton[objectName="post_transition_metal"] {
+    background-color: #66cc99;
+}
+
+QPushButton[objectName="lanthanide"] {
+    background-color: #0099cc;
+}
+
+QPushButton[objectName="actinide"] {
+    background-color: #cc9966;
+}
+
+/* Ховер эффект */
+QPushButton:hover {
+    border: 2px solid black;
+}
+
+/* Нажатие */
+QPushButton:pressed {
+    background-color: rgba(0, 0, 0, 0.1);
+}
